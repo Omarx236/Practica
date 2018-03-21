@@ -110,7 +110,7 @@ body{
 }
 /**  globales **/
 .contenedor{
-    width: 98%;
+    width: 95%;
     margin: 0 auto;
 }
 @media only screen and (min-width: 460px){
@@ -126,14 +126,35 @@ body{
 @media only screen and (min-width: 992px){
     .contenedor{
     width: 90%;
-    max-width: 1300px;
+    max-width: 1100px;
     }
 }
+.seccion{
+    padding: 30px 0;
 
+}
+.seccion p {
+    font-size: 1em;
+    text-align: justify;
+    font-family: ' Oswald', sans-serif;
 
+}
 
 h2{
-    font-family: 'Coda Caption', sans-serif;
+    font-family: ' Oswald', sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+    text-align: center;
+}
+h2::after{
+    content: '';
+    margin: 0 auto;
+    background-image: url(../img/separador.png);
+    height: 30px;
+    width: 100px;
+    display: block;
+
+
 }
 /** header**/
 div.hero{
@@ -143,11 +164,10 @@ div.hero{
     background-size: cover;
 }
 div.contenido-header{
-    padding-top: 40px; 
+    padding-top: 60px; 
 }
 @media only screen and (min-width: 768px){
     div.contenido-header{
-    padding-top: 45px; 
     
     }
 }
@@ -176,9 +196,8 @@ div.contenido-eventos p{
     div.contenido-eventos {
         width: 60%;
         margin: 0 auto;
-        padding: 1px;
-        margin-top: 45px;
-
+        padding: 2px;
+        margin-top: 40px;
     }    
 } 
 div.contenido-eventos p i{
@@ -198,45 +217,51 @@ p.slogan span{
     font-weight: bold;
 }
 h1.nombre-sitio{
-    font-size: 5.9vw;
+    font-size: 5vw;
     text-transform: uppercase;
-    font-family: 'Coda Caption', sans-serif;
+    font-family: 'PT Sans', sans-serif;
 
 }
 @media only screen and (min-width: 768px){
     h1.nombre-sitio{
-    font-size: 6vw;
-    margin: 0;
+    font-size: 5.9vw;
+    margin: 1px;
+    line-height: 1.8;
     }
 }
 /** Barra**/
 div.barra{
     background-color: #353535;
-    padding: 50px 0;
+    padding: 55px 0;
 }
 div.logo{
-    width: 100%;
+    width: 80%;
+    float: left;
 }
 div.logo img{
     width: 100%;
 }
 @media only screen and (min-width: 768px){
     div.logo {
-    width: 30%;
-    float: left;
+    width: 33%;
     }
 }
 /** Nav  principales**/
-div.navegacion-principal{
-    display: none;   
+nav.navegacion-principal{
+    display: none;
 }
 nav.navegacion-principal a{
-    font-family: font-family: 'Coda Caption', sans-serif;
+    font-family:'Coda Caption', sans-serif;
     color: white;
-    font-size: 1em;
+    font-size: 1.3em;
     text-transform: uppercase;
     text-decoration: none;
-    transition: all .4s ease;
+    transition: all .6s ease;
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+    clear: both;
 }
 nav.navegacion-principal a:hover{
     background-color: #fe4918;
@@ -249,12 +274,42 @@ nav.navegacion-principal a:hover{
     display: block;
     }
     nav.navegacion-principal a {
-        margin-right: 10px;
         padding: 10px 10px;
         display: inline-block;
-
+        width: auto;
+        display: inline-block;
+        text-align: center;
+        margin:0 10px 0 0;
     }
 }
+
+/** Menu movil**/
+div.menu-movil{
+    width: 60px;
+    display: block;
+    float: right;
+    text-align: right;
+    margin-top: 12px;
+}
+div.menu-movil:hover{
+    cursor: pointer;
+}
+@media only screen and (min-width: 768px){
+    div.menu-movil{
+        display: none;
+    }
+}
+
+div.menu-movil span{
+    height: 6px;
+    margin-top: 8px;
+    background-color: white;
+    display: block;
+}
+
+
+
+
 
 
 /* ==========================================================================
